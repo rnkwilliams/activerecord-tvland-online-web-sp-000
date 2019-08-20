@@ -4,5 +4,6 @@ class Show < ActiveRecord::Base
   
   def actors_list
     actors.collect do |actor|
+      
   end
 end
