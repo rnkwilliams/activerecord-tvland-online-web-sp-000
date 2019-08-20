@@ -9,8 +9,8 @@ class Actor < ActiveRecord::Base
   
   #lists all of the characters that actor has alongside the show that the character is in
   def list_roles 
-    self.
+    characters.collect do |character|
+        "#{character.name} - #{character.show.name}"
+      end    
   end
-  
-  
 end
