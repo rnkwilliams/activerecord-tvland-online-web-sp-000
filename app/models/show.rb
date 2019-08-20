@@ -8,3 +8,4 @@ class Show < ActiveRecord::Base
       actor.fullname
   end
 end
+end
